@@ -4,7 +4,7 @@
     <title>DashBoard</title>
 
     <script>
-
+$(document).ready(function(){
      $("#audit").click(function() {
         $.ajax({
           url: "http://167.71.237.131:8181/api/facebook/audit",
@@ -17,6 +17,7 @@
           }
         });
       });
+    });
     </script>
   </head>
   <body>

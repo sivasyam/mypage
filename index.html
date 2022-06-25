@@ -1,7 +1,24 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <title>DashBoard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $( "#audit").click(function() {
+        $.ajax({
+          url: "http://167.71.237.131:8181/api/facebook/audit",
+          type: "GET",
+          success: function(result) {
+            console.log(result);
+          },
+          error: function(error) {
+            console.log(error);
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div><a href="#" "#audit"></a>
+  </body>
 </html>
